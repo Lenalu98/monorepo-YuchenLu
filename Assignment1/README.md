@@ -1,12 +1,12 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: Yuchen Lu
+- How many hours did it take you to complete this assignment? 6 hours.
+- Did you collaborate with any other students/TAs/Professors? No.
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  No.
 - (Optional) What was your favorite part of the assignment?
+  Advanced Python course.
 - (Optional) How would you improve the assignment?
 
 # Implementation Logistics
@@ -19,7 +19,7 @@
 See the folders [part1](./part1) for this assignment.
 
 # Rubric
- 
+
   <table>
   <tbody>
     <tr>

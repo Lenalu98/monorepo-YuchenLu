@@ -7,6 +7,7 @@
 """
 from abc import ABC, abstractmethod
 
+
 # abstract class Shape
 class Shape(ABC):
 
@@ -20,7 +21,7 @@ class Shape(ABC):
 
 
 class Rectangle(Shape):
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
 

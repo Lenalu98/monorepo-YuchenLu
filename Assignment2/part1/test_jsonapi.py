@@ -8,36 +8,36 @@ from jsonapi import CustomJSONEncoder, CustomJSONDecoder, dumps, loads
 
 def test_encode_complex():
     encoder = CustomJSONEncoder()
-    obj = complex(1, 2)
-    expected_result = {"__complex__": True, "real": 1.0, "imag": 2.0}
+    obj = complex(2, 7)
+    expected_result = {"__complex__": True, "real": 2.0, "imag": 7.0}
     assert encoder.encode_complex(obj) == expected_result
 
 
 def test_encode_range():
     encoder = CustomJSONEncoder()
-    obj = range(1, 10, 3)
-    expected_result = {"__range__": True, "start": 1, "stop": 10, "step": 3}
+    obj = range(3, 10, 4)
+    expected_result = {"__range__": True, "start": 3, "stop": 10, "step": 4}
     assert encoder.encode_range(obj) == expected_result
 
 
 def test_decode_complex():
     decoder = CustomJSONDecoder()
-    obj = {"__complex__": True, "real": 1.0, "imag": 2.0}
-    expected_result = complex(1, 2)
+    obj = {"__complex__": True, "real": 3.0, "imag": 9.0}
+    expected_result = complex(3, 9)
     assert decoder.decode_complex(obj) == expected_result
 
 
 def test_decode_range():
     decoder = CustomJSONDecoder()
-    obj = {"__range__": True, "start": 1, "stop": 10, "step": 3}
-    expected_result = range(1, 10, 3)
+    obj = {"__range__": True, "start": 1, "stop": 10, "step": 5}
+    expected_result = range(1, 10, 5)
     assert decoder.decode_range(obj) == expected_result
 
 
 def test_dumps_and_loads():
     my_data = {
-        "complex_number": complex(1, 2),
-        "range_object": range(1, 10, 3),
+        "complex_number": complex(8, 9),
+        "range_object": range(1, 10, 2),
         "boolean_value": False
     }
 

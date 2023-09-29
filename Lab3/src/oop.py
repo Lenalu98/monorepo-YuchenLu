@@ -25,7 +25,6 @@ class Image:
     def getHeight(self):
         return self.m_height
 
-
     def getPixelColorR(self, x, y):
         return self.m_Pixels[self.m_width * self.m_colorChannels * y + x]
 
@@ -39,7 +38,23 @@ class Image:
 
 
 class Texture(Image):
-    pass
+    def __init__(self, image):
+        self.image = image  # Composition: Texture has an Image
+
+    def getWidth(self):
+        return self.image.getWidth()
+
+    def getHeight(self):
+        return self.image.getHeight()
+
+    def getPixelColorR(self, x, y):
+        return self.image.getPixelColorR(x, y)
+
+    def getPixels(self):
+        return self.image.getPixels()
+
+    def setPixelsToRandomValue(self):
+        self.image.setPixelsToRandomValue()
 
 
 def main():
@@ -49,11 +64,15 @@ def main():
     image1 = Image(100, 200)
     # Create a second image
     image2 = Image(image1.getWidth(), image1.getHeight())
+    texture1 = Texture(image1)
 
     print(f"image1: {image1.getWidth()}, {image1.getHeight()}")
     print(f"image1 red color at (0, 0): {image1.getPixelColorR(0, 0)}")
     print(f"image2: {image2.getWidth()}, {image2.getHeight()}")
     print(f"image2 red color at (0, 0): {image2.getPixelColorR(0, 0)}")
+    
+    print(f"image1: {texture1.getWidth()}, {texture1.getHeight()}")
+    print(f"image1 red color at (0, 0): {texture1.getPixelColorR(0, 0)}")
 
 
 if __name__ == "__main__":

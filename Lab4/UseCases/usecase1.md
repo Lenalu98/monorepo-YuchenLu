@@ -18,7 +18,7 @@
 
 **Scenario**: _User is lauching the programlaunches the program. Then program will set the window and canvas dimensions to 600x400 pixels.._
 
-**Exceptions**: _ None_
+**Exceptions**: _None_
 
 **Priority**: _High_
 

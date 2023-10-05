@@ -6,35 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: _Selecting Drawing Colors_
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: _User_
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: _Choose a color for drawing on the canvas_
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: _The program is running and user is going to choose color_
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Trigger**: _User presses a number key (1 to 8)_
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Scenario**: _User presses a number key (1 to 8). Then program interprets the key press and sets the drawing color accordingly. Black is 1, white is 2, red is 3, green is 4, blue is 5, yellow is 6, magenta is 7 and cyan is 8._
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: _When a user presses number not in 1 to 8, then ignore input._
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: _Medium-priority_
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: _First release_
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: _User interacts with the system through the keyboard._
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: _None_
+
+**Channels to Secondary Actors**: _None_
+
+**Open Issues**: _None_
 
 <hr>
-
-
 
 (adapted by Pressman and Maxim, Software Engineering: A Practitioner’s Approach, pp. 151-152, from Cockburn,
 A., Writing Effective Use-Cases, Addison-Wesley, 2001)

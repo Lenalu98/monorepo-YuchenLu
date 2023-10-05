@@ -6,35 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: _Clearing the Canvas_
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: _User_
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: _To clear the entire canvas, removing all pixels and fillinng the color last selected in canvas by pressing space key_
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: _The program is running and accessible._
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Trigger**: _Pressing the space key._
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Scenario**: _User presses the space key. The program clears the entire canvas, filling it with the last selected color._
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: _If there is no color selected before, canvas will be filled with an default color(might be black or white), ans also throw an notification that user needs to select the filling color._
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: _Medium_
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: _First Release_
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: _Keyboard input and GUI for color selecting_
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: _None_
+
+**Channels to Secondary Actors**: _None_
+
+**Open Issues**: _Other key rather than space key, throw notification for wrong key or some notifications about the task rules_
 
 <hr>
-
-
 
 (adapted by Pressman and Maxim, Software Engineering: A Practitioner’s Approach, pp. 151-152, from Cockburn,
 A., Writing Effective Use-Cases, Addison-Wesley, 2001)

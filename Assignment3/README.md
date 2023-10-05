@@ -1,12 +1,12 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: Yuchen Lu
+- How many hours did it take you to complete this assignment? 4 hours
+- Did you collaborate with any other students/TAs/Professors? No
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
+  - piazza
+  - professor's tutorial
+- (Optional) What was your favorite part of the assignment? Refactoring part
 - (Optional) How would you improve the assignment?
 
 # Implementation Logistics
@@ -19,7 +19,7 @@
 See the folders [part1](./part1) for this assignment.
 
 # Rubric
- 
+
   <table>
   <tbody>
     <tr>
@@ -41,5 +41,5 @@ See the folders [part1](./part1) for this assignment.
   </tbody>
 </table>
 
-* Note: You must also commit any additional files into your repository so we can test your code.
-  * Points will be lost if you forget!
+- Note: You must also commit any additional files into your repository so we can test your code.
+  - Points will be lost if you forget!
